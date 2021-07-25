@@ -6,7 +6,7 @@ import { mentorRouter } from "./Routes/Mentor.js";
 import { studentRouter } from "./Routes/Student.js";
 
 const app = express();
-const PORT = 5000 || process.env.PORT;
+const PORT =  process.env.PORT;
 
 const url = process.env.MONGO_URL;
 

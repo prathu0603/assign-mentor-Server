@@ -17,9 +17,10 @@ con.on("open", () => console.log("MongoDB Connected..."));
 app.use(express.json());
 app.use(cors());
 
-app.use("/", (req, res) => res.send("Welcome To Bhide Tutions.!.!.!"));
+
 app.use("/", mentorRouter);
 app.use("/", studentRouter);
+app.get("/", (req, res) => res.send("Welcome To Bhide Tutions.!.!.!"));
 
 
 

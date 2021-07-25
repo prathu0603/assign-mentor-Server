@@ -20,7 +20,9 @@ app.use(cors());
 
 app.use("/", mentorRouter);
 app.use("/", studentRouter);
-app.get("/", (req, res) => res.send("Welcome To Bhide Tutions.!.!.!"));
+app.get("/", (request, response) => {
+  response.send("Welcome To Bhide Tutions.!.!.!");
+});
 
 
 
